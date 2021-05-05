@@ -18,3 +18,9 @@ test('add() should return sum of 2 digits if two number provided separated by ,'
 
   t.is(result, 3)
 })
+
+test('add() should return sum of n digits if n numbers provided separated by ,', t => {
+  const result = add('5,6,10,100')
+
+  t.is(result, 121)
+})
