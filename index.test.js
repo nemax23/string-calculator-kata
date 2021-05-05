@@ -24,3 +24,9 @@ test('add() should return sum of n digits if n numbers provided separated by ,',
 
   t.is(result, 121)
 })
+
+test('add() should return sum of n digits if n numbers provided separated by , or \n', t => {
+  const result = add('5,6,10\n100,12\n9')
+
+  t.is(result, 142)
+})
