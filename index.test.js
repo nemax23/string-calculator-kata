@@ -43,3 +43,9 @@ test('add() throws if negative numbers', t => {
 
   t.is(error.message, `negatives not allowed: ${negativeNumber}`)
 })
+
+test('add() should ignore number gt 1000', t => {
+  const result = add('5,1001,999,10000')
+
+  t.is(result, 1004)
+})
