@@ -1,0 +1,22 @@
+{
+  "name": "string-calculator-kata",
+  "version": "1.0.0",
+  "description": "String calculator kata",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava --s --v"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nemax23/string-calculator-kata.git"
+  },
+  "author": "Massimiliano Battan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nemax23/string-calculator-kata/issues"
+  },
+  "homepage": "https://github.com/nemax23/string-calculator-kata#readme",
+  "devDependencies": {
+    "ava": "^3.15.0"
+  }
+}
