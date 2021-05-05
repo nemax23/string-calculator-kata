@@ -17,7 +17,9 @@ const sumByDelimeter = (str, delimeter) => str.split(delimeter).reduce((acc, cur
   if (number < 0) {
     acc.lowers.push(number)
   }
-  acc.sum += number
+  if (number < 1000) {
+    acc.sum += number
+  }
   return acc
 }, {
   sum: 0,
