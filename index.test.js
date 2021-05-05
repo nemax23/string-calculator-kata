@@ -30,3 +30,9 @@ test('add() should return sum of n digits if n numbers provided separated by , o
 
   t.is(result, 142)
 })
+
+test('add() should return sum of n digits if n numbers provided separated by , or \n or custom delimeter', t => {
+  const result = add('//;\n5;6;10;100;12;9')
+
+  t.is(result, 142)
+})
