@@ -36,3 +36,10 @@ test('add() should return sum of n digits if n numbers provided separated by , o
 
   t.is(result, 142)
 })
+
+test('add() throws if negative numbers', t => {
+  const negativeNumber = -5
+  const error = t.throws(() => add(`1,5,10,${negativeNumber}`))
+
+  t.is(error.message, `negatives not allowed: ${negativeNumber}`)
+})
