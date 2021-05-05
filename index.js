@@ -5,10 +5,12 @@ const add = (str) => {
   }
   const match = str.match(/^\/\/(.*)\n(.*)$/)
   if (match) {
-    return match[2].split(match[1]).reduce((acc, current) => acc + parseInt(current), 0)
+    return sumByDelimeter(match[2], match[1])
   }
-  return str.split(/\n|,/).reduce((acc, current) => acc + parseInt(current), 0)
+  return sumByDelimeter(str, /\n|,/)
 }
+
+const sumByDelimeter = (str, delimeter) => str.split(delimeter).reduce((acc, current) => acc + parseInt(current), 0)
 
 module.exports = {
   add
